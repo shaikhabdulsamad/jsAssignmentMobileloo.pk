@@ -1,4 +1,3 @@
-
 function searchItem() {
 
     var searchInput = document.getElementById('searchInput');
@@ -50,12 +49,11 @@ function searchItem() {
         }
     }
 
-
+    // var flag = false;
 
     for (var key in mobiles) {
         for (var key1 in mobiles[key]) {
             if (searchInputValue === mobiles[key][key1].model) {
-
                 var searchProduct = document.createElement('div');
                 searchProduct.setAttribute("class", "container")
                 searchProduct.className += "div"
@@ -78,10 +76,15 @@ function searchItem() {
                 var product = document.getElementById('products')
 
                 var mobileName = document.getElementsByClassName("card-title")
-                
+
+
+
                 for (var i = 0; i < mobileName.length; i++) {
                     if (mobileName[i].innerHTML === mobiles[key][key1].model) {
+                        // flag = true
+
                         var searchProductImg = document.createElement('img')
+                        searchProductImg.setAttribute("class", "searchImage")
                         var src = mobileName[i].parentNode.previousSibling.previousSibling.src
                         searchProductImg.setAttribute("src", src)
                         var ul = document.createElement('ul')
@@ -103,13 +106,15 @@ function searchItem() {
                         searchProduct2b.appendChild(ul)
 
                         product.innerHTML = searchProduct.innerHTML
+
+
                     }
+
 
                 }
             }
-        }
 
-
-    }
+}
 }
 
+}

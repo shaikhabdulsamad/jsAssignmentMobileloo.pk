@@ -14,8 +14,8 @@
 
 <body>
 
-  <div class="main container-fluid">
-    <div class="head fixed-top">
+  <div class="main">
+    <div class="head container-fluid fixed-top">
 
       <div class="row heading">
         <h1>Mobileloo.pk</h1>
@@ -24,15 +24,15 @@
         <div class="col-10 input-div">
           <input id="searchInput" type="text" placeholder="Search mobiles here...">
         </div>
-        <div class="col-2 btn-div">
-          <span><a href="#" onclick="searchItem()" id="goToProductPage">Search</a> </span>
+        <div onclick="searchItem()" class="col-2 btn-div">
+          <span onclick="searchItem()" id="goToProductPage">Search </span>
         </div>
       </div>
 
     </div>
 
-    <div id="products" class="container mb-5">
-      <div class="row row-cols-1 row-cols-md-4 g-4 mt-1">
+    <div id="products" class="container ">
+      <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 g-4 mt-1">
         <div class="col">
           <div class="card h-100">
             <img  src="images/samsung/samsung1.jfif" class="card-img-top product-img" alt="...">
@@ -71,7 +71,7 @@
         </div>
       </div>
 
-      <div class="row row-cols-1 row-cols-md-4 g-4 mt-1">
+      <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 g-4 mt-1">
         <div class="col">
           <div class="card h-100">
             <img src="images/samsung/samsung5.jfif" class="card-img-top product-img" alt="...">
@@ -111,7 +111,7 @@
       </div>
     </div>
 
-    <div class="row foot fixed-bottom">
+    <div class="row foot  container-fluid   fixed-bottom">
       <div class="col-sm-12 col-md-6">
         <p class="m-0 pt-1 pb-1">copyright©mobileloo.pk</p>
       </div>
