@@ -49,7 +49,7 @@ function searchItem() {
         }
     }
 
-    // var flag = false;
+    var flag = false;
 
     for (var key in mobiles) {
         for (var key1 in mobiles[key]) {
@@ -81,7 +81,7 @@ function searchItem() {
 
                 for (var i = 0; i < mobileName.length; i++) {
                     if (mobileName[i].innerHTML === mobiles[key][key1].model) {
-                        // flag = true
+                        flag = true
 
                         var searchProductImg = document.createElement('img')
                         searchProductImg.setAttribute("class", "searchImage")
@@ -112,9 +112,14 @@ function searchItem() {
 
 
                 }
+
             }
 
-}
-}
+        }
+    }
+    if (flag == false) {
+        alert("Search not found")
+    }
+    
 
 }
